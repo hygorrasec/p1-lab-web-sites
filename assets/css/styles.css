@@ -72,7 +72,7 @@ body{
 	justify-self:center;
 }
 .bannerdois{
-	background-image:url("imagens/P3- Diretorio.png");
+	background-image:url("../imgs/bg-world.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 	width:100%;
