@@ -1,0 +1,148 @@
+body{
+	margin:0px;
+}
+.nb{
+	box-sizing:border-box;
+	height:60px;
+	background-color:black;
+	overflow:hidden;
+	position:relative;
+}
+.primeiro{
+	width:3%;
+	float:left;
+}
+.segundo{
+	width:8%;
+	float:left;
+	overflow:hidden;
+	display:grid;
+	grid-template-rows:60px;
+	grid-template-columns:100%;
+	grid-template-areas:
+	"lp";
+	gap:0px 0px;
+}
+.terceiro{
+	width:81%;
+	float:left;
+}
+.quarto{
+	width:8%;
+	overflow:hidden;
+	display:grid;
+	grid-template-rows:60px;
+	grid-template-columns:100%;
+	grid-template-areas:
+	"ls";
+	gap:0px 0px;
+}
+.lp{
+	grid-area:lp;
+	justify-self:center;
+	align-self:center;
+}
+.ls{
+	grid-area:ls;
+	justify-self:center;
+	align-self:center;
+}
+.uppertext{
+	float:right;
+	font-size:25px;
+	text-decoration:none;
+	color:white;
+	padding:15px 25px;
+}
+.uppertext:hover{
+	color:red;
+}
+.bannerum{
+	overflow:hidden;
+	display:grid;
+	grid-template-rows:100%;
+	grid-template-columns:100%;
+	grid-template-areas:
+	"bannerum";
+	gap:0px 0px;
+}
+.lbum{
+	grid-area:bannerum;
+	align-self:center;
+	justify-self:center;
+}
+.bannerdois{
+	background-image:url("imagens/P3- Diretorio.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	display:grid;
+	grid-template-rows:100%;
+	grid-template-columns:100%;
+	grid-template-areas:
+	"preplinks"
+}
+.preplinks{
+	grid-area:preplinks;
+	display:grid;
+	grid-template-rows:33% 33% 33%;
+	grid-template-columns:20% 20% 20% 20% 20%;
+	grid-template-areas:
+	". . . . ."
+	". linkum linkdois linktres ."
+	". . . . ."
+}
+.linkum{
+	grid-area:linkum;
+	align-self:center;
+	justify-self:center;
+}
+.linkdois{
+	grid-area:linkdois;
+	align-self:center;
+	justify-self:center;
+}
+.linktres{
+	grid-area:linktres;
+	align-self:center;
+	justify-self:center;
+}
+.footerf{
+	overflow:hidden;
+	box-sizing:border-box;
+	float:left;
+	background-color:black;
+	height:460px;
+}
+.primeirapart{
+	width:25%;
+}
+.segundapart{
+	width:50%;
+	float:center;
+}
+.terceirapart{
+	width:25%;
+	display:grid;
+	grid-template-rows:30% 70%;
+	grid-template-columns:20% 60% 20%;
+	grid-template-areas:
+	". footertexttitulo ."
+	". footertextpadrao .";
+}
+.iframeconfig{
+	width:100%;
+	height:460px;
+	border:0px;
+}
+.footertexttitulo{
+	grid-area:footertexttitulo;
+	justify-self:center;
+	align-self:center;
+}
+.footertextpadrao{
+	grid-area:footertextpadrao;
+	justify-self:center;
+	align-self:start;
+}
