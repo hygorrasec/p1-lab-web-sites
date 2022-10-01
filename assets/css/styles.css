@@ -1,14 +1,11 @@
-.nb{
-	box-sizing:border-box;
-	height:60px;
-	background-color:black;
-	overflow:hidden;
-	position:relative;
+.nb {
+	box-sizing: border-box;
+	height: 60px;
+	background-color: black;
+	overflow: hidden;
+	position: relative;
 }
-.primeiro{
-	width:3%;
-	float:left;
-}
+
 .segundo{
 	width:8%;
 	float:left;

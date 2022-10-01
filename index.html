@@ -4,99 +4,122 @@
 <!-- O 'lang' é um atributo de idioma do html, que será herdado por todos os demais elementos, definindo o idioma padrão do texto. -->
 <html lang="pt-BR">
 
-	<!-- O elemento head representa uma coleção de metadados para o Documento. -->
-	<head>
-		<!-- A tag meta charset="UTF-8" é uma tag meta utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado naquele documento. Em outras palavras, essa tag serve para que os navegadores saibam como devem renderizar os textos incluídos em uma página específica. -->
-		<meta charset="UTF-8">
+<!-- O elemento head representa uma coleção de metadados para o Documento. -->
 
-		<!-- A tag meta http-equiv é exclusiva para Internet Explorer, ela pode configurar a página para ser renderizada como em outra versão do Internet Explorer. O Internet Explorer não suporta o doctype para HTML5, então provavelmente ele vai acabar indo para um modo chamado Quirks Mode. O Quirks Mode faz o site ser interpretado como uma versão mais antiga do IE, o que pode fazer o site falhar. Então, ao ao usar X-UA-Compatible com o valor IE=edge, ele força o navegador renderizar com a mais recente. -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+	<!-- A tag meta charset="UTF-8" é uma tag meta utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado naquele documento. Em outras palavras, essa tag serve para que os navegadores saibam como devem renderizar os textos incluídos em uma página específica. -->
+	<meta charset="UTF-8">
 
-		<!-- O HTML5 introduziu um método para permitir que os web designers assumam o controle da viewport, por meio da meta 'viewport'. Isso fornece ao navegador instruções sobre como controlar as dimensões e o dimensionamento da página. O 'width=device-width' define a largura da página para seguir a largura da tela do dispositivo. O 'initial-scale=1.0' define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador. -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- A tag meta http-equiv é exclusiva para Internet Explorer, ela pode configurar a página para ser renderizada como em outra versão do Internet Explorer. O Internet Explorer não suporta o doctype para HTML5, então provavelmente ele vai acabar indo para um modo chamado Quirks Mode. O Quirks Mode faz o site ser interpretado como uma versão mais antiga do IE, o que pode fazer o site falhar. Então, ao ao usar X-UA-Compatible com o valor IE=edge, ele força o navegador renderizar com a mais recente. -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<!-- O normalize.css faz com que os navegadores renderizem todos os elementos de forma mais consistente e de acordo com os padrões modernos. Ele visa precisamente apenas os estilos que precisam ser normalizados. -->
-		<link href="assets/css/normalize.css" rel="stylesheet"/>
+	<!-- O HTML5 introduziu um método para permitir que os web designers assumam o controle da viewport, por meio da meta 'viewport'. Isso fornece ao navegador instruções sobre como controlar as dimensões e o dimensionamento da página. O 'width=device-width' define a largura da página para seguir a largura da tela do dispositivo. O 'initial-scale=1.0' define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Estilo para o site. -->
-		<link href="assets/css/styles.css" rel="stylesheet"/>
+	<!-- A tag meta name='author' serve para identificar qual o nome do autor da página, geralmente o desenvolver ou a empresa desenvolvedora. -->
+	<meta name="author"	content="Fabio Correia Lima, Hygor Rasec de SantAnna Machado, Joao Pedro Portela da Trindade, Luis Antonio Sampaio Duarte, Victor Bernardo Gomes de Tatagiba">
 
-		<!-- Como ainda existe alguns usuários de IE, então muitos sites ainda fazem uso do html5shiv, para fazer com que seja reconhecido as tags como <section>, <footer> e <nav> -->
-		<!--[if lt IE 9]>
+	<!-- O normalize.css faz com que os navegadores renderizem todos os elementos de forma mais consistente e de acordo com os padrões modernos. Ele visa precisamente apenas os estilos que precisam ser normalizados. -->
+	<link href="assets/css/normalize.css" rel="stylesheet" />
+
+	<!-- Estilo Bootstrap para o site. -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Estilo personalizado para o site. -->
+	<link href="assets/css/styles.css" rel="stylesheet" />
+
+	<!-- Ícones do Font-awesome. -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+	<!-- Como ainda existe alguns usuários de IE, então muitos sites ainda fazem uso do html5shiv, para fazer com que seja reconhecido as tags como <section>, <footer> e <nav>. -->
+	<!--[if lt IE 9]>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<![endif]-->
 
-		<!-- Título do site -->
-		<title>Recikla Maricá - Tecnologia para auxiliar o processo de coleta seletiva.</title>
-	</head>
-	<body>
-		<div>
-			<div class="nb primeiro">
-			</div>
-			<div class="nb segundo">
-				<div class="lp">
-					<img width="45%" src="assets/imgs/logo-recikla-marica.png"/>
+	<!-- Título do site -->
+	<title>Recikla Maricá - Tecnologia para auxiliar o processo de coleta seletiva.</title>
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<img class="navbar-brand" src="assets/imgs/logo-recikla-marica.png" />
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">SOBRE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">SERVIÇOS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">CONTATO</a>
+						</li>
+					</ul>
+					<object data="assets/imgs/bandeira-brasil.svg" width="30" height="30"> </object>
 				</div>
 			</div>
-			<div class="nb terceiro">
-				<div>
-					<a class="uppertext" href='#'>Contato</a>
-					<a class="uppertext" href='#'>Servicos</a>
-					<a class="uppertext" href='#'>Home</a>
-				</div>
+		</nav>
+	</div>
+
+	<div class="bannerum">
+		<div class="lbum">
+			<img width="100%" src="assets/imgs/bg-header.png">
+		</div>
+	</div>
+	<div class="bannerdois">
+		<div class="preplinks">
+			<div class="linkum">
+				<img width="100%" src="assets/imgs/icon-01.png">
 			</div>
-			<div class="nb quarto">
-				<div class="ls">
-					<img width="50%" src="assets/imgs/bandeira-brasil.ico"/>
-				</div>
+			<div class="linkdois">
+				<img width="100%" src="assets/imgs/icon-02.png">
+			</div>
+			<div class="linktres">
+				<img width="100%" src="assets/imgs/icon-03.png">
 			</div>
 		</div>
-		<div class="bannerum">
-			<div class="lbum">
-				<img width="100%" src="assets/imgs/bg-header.png">
+	</div>
+	<div name="footer">
+		<div class="footerf primeirapart">
+		</div>
+		<div class="footerf segundapart">
+			<iframe class='iframeconfig'
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.897757793613!2d-42.81518878503409!3d-22.917141685006474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99ed97a377eccf%3A0x47e3b1c66d2180dc!2sUniversidade%20de%20Vassouras%20-%20Campus%20Maric%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1663297349495!5m2!1spt-BR!2sbr"></iframe>
+		</div>
+		<div class="footerf terceirapart">
+			<div class="footertexttitulo">
+				<font color="white">
+					<h1>
+						Campus Maricá
+					</h1>
+				</font>
+			</div>
+			<div class="footertextpadrao">
+				<font color="white">
+					<p>
+						Av. Governador Roberto Silveira, nº 437, Flamengo - Maricá/RJ
+					</p>
+					<p>
+						(21) 3731-2977
+					</p>
+					<p>
+						Segunda a sexta: 8h às 12h e 14h às 22h. Sábados: das 8h às 12h
+					</p>
+				</font>
 			</div>
 		</div>
-		<div class="bannerdois">
-			<div class="preplinks">
-				<div class="linkum">
-					<img width="100%" src="assets/imgs/icon-01.png">
-				</div>
-				<div class="linkdois">
-					<img width="100%" src="assets/imgs/icon-02.png">
-				</div>
-				<div class="linktres">
-					<img width="100%" src="assets/imgs/icon-03.png">
-				</div>
-			</div>
-		</div>
-		<div name="footer">
-			<div class="footerf primeirapart">
-			</div>
-			<div class="footerf segundapart">
-				<iframe class='iframeconfig' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.897757793613!2d-42.81518878503409!3d-22.917141685006474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99ed97a377eccf%3A0x47e3b1c66d2180dc!2sUniversidade%20de%20Vassouras%20-%20Campus%20Maric%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1663297349495!5m2!1spt-BR!2sbr"></iframe>
-			</div>
-			<div class="footerf terceirapart">
-				<div class="footertexttitulo">
-					<font color="white">
-						<h1>
-							Campus Maricá
-						</h1>
-					</font>
-				</div>
-				<div class="footertextpadrao">
-					<font color="white">
-						<p>
-							Av. Governador Roberto Silveira, nº 437, Flamengo - Maricá/RJ
-						</p>
-						<p>
-							(21) 3731-2977
-						</p>
-						<p>
-							Segunda a sexta: 8h às 12h e 14h às 22h. Sábados: das 8h às 12h
-						</p>
-					</font>
-				</div>
-			</div>
-		</div>
-	</body>
+	</div>
+
+	<!-- JavaScript Bootstrap para o site. -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
