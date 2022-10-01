@@ -1,10 +1,36 @@
-<html>
+<!-- Com a chegada do HTML5 passamos a ter um doctype único, o <!DOCTYPE html>, passamos a não ter mais que diferenciar entre HTML e XHTML, ou seja passou a aceitar tags que terminem assim <img src=""> ou assim <img src="" />, passou também a suportar a inclusão de qualquer tag, ela sendo uma tag valida ou não e de XML (que geralmente as tags são customizadas por quem criou o XML), um exemplo de Xml é o SVG (imagem vetorial). -->
+<!DOCTYPE html>
+
+<!-- O 'lang' é um atributo de idioma do html, que será herdado por todos os demais elementos, definindo o idioma padrão do texto. -->
+<html lang="pt-BR">
+
+	<!-- O elemento head representa uma coleção de metadados para o Documento. -->
 	<head>
+		<!-- A tag meta charset="UTF-8" é uma tag meta utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado naquele documento. Em outras palavras, essa tag serve para que os navegadores saibam como devem renderizar os textos incluídos em uma página específica. -->
+		<meta charset="UTF-8">
+
+		<!-- A tag meta http-equiv é exclusiva para Internet Explorer, ela pode configurar a página para ser renderizada como em outra versão do Internet Explorer. O Internet Explorer não suporta o doctype para HTML5, então provavelmente ele vai acabar indo para um modo chamado Quirks Mode. O Quirks Mode faz o site ser interpretado como uma versão mais antiga do IE, o que pode fazer o site falhar. Então, ao ao usar X-UA-Compatible com o valor IE=edge, ele força o navegador renderizar com a mais recente. -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- O HTML5 introduziu um método para permitir que os web designers assumam o controle da viewport, por meio da meta 'viewport'. Isso fornece ao navegador instruções sobre como controlar as dimensões e o dimensionamento da página. O 'width=device-width' define a largura da página para seguir a largura da tela do dispositivo. O 'initial-scale=1.0' define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- O normalize.css faz com que os navegadores renderizem todos os elementos de forma mais consistente e de acordo com os padrões modernos. Ele visa precisamente apenas os estilos que precisam ser normalizados. -->
+		<link href="assets/css/normalize.css" rel="stylesheet"/>
+
+		<!-- Estilo para o site. -->
 		<link href="assets/css/styles.css" rel="stylesheet"/>
+
+		<!-- Como ainda existe alguns usuários de IE, então muitos sites ainda fazem uso do html5shiv, para fazer com que seja reconhecido as tags como <section>, <footer> e <nav> -->
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<!-- Título do site -->
 		<title>Recikla Maricá - Tecnologia para auxiliar o processo de coleta seletiva.</title>
 	</head>
 	<body>
-		<div name="navbar">
+		<div>
 			<div class="nb primeiro">
 			</div>
 			<div class="nb segundo">
