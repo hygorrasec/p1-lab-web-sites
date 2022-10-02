@@ -12,3 +12,5 @@ O trabalho foi desenvolvimento puramente em HTML5 e CSS. Foram utilizados duas b
 UNIVERSIDADE DE VASSOURAS - CAMPUS MARICÁ - RJ
 Professor: André Saraiva
 Projeto desenvolvido por: Fábio Correa, Hygor Rasec, João Pedro, Luis Antonio, Nícolas Oliveira e Victor Bernardo.
+
+Projeto sendo mantido e atualizado no repositório: https://github.com/hygorrasec/t1-lab-web-sites
