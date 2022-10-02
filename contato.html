@@ -81,43 +81,30 @@
 		</nav>
 	</div>
 
-	<!-- Aqui estamos criando um carrocel com slides de imagens para estilizar o nosso Header. Essa formatação está sendo possível graças ao Bootstrap. -->
-	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="d-block w-100" src="assets/imgs/bg-slide-01.jpg" alt="Slide 01">
-			</div>
-			<div class="carousel-item">
-				<img class="d-block w-100" src="assets/imgs/bg-slide-02.jpg" alt="Slide 02">
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Anterior</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Próximo</span>
-		</button>
-	</div>
-
-	<div class="services">
-		<div class="container text-center">
-			<h1>NOSSOS PRINCIPAIS SERVIÇOS</h1>
-			<div class="row services-icons">
-				<div class="col-md-4 service-icon">
-					<img width="110" height="110" src="assets/imgs/01-descartado.svg" alt="Descartado"/>
-					<p><h4>DESCARTADO</h4></p>
+	<div class="contact">
+		<div class="container">
+			<h1 class="text-center">CONTATO</h1>
+			<br>
+			<form>
+				<div class="mb-3">
+					<label for="name" class="form-label">Seu Nome</label>
+					<input type="text" class="form-control" id="name">
 				</div>
-				<div class="col-md-4 service-icon">
-					<img width="110" height="110" src="assets/imgs/02-informado.svg" alt="Informado"/>
-					<p><h4>INFORMADO</h4></p>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+					<div id="emailHelp" class="form-text">Nós nunca iremos compartilhar seu email com terceiros.</div>
 				</div>
-				<div class="col-md-4 service-icon">
-					<img width="110" height="110" src="assets/imgs/03-recolhido.svg" alt="Recolhido"/>
-					<p><h4>RECOLHIDO</h4></p>
+				<div class="mb-3">
+					<label for="message" class="form-label">Mensagem</label>
+					<textarea class="form-control" id="message" rows="3"></textarea>
+				  </div>
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Deseja receber novidades por email?</label>
 				</div>
-			</div>
+				<button type="submit" class="btn btn-primary">Enviar</button>
+			</form>
 		</div>
 	</div>
 

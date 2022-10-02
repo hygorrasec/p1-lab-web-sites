@@ -1,142 +1,92 @@
-.nb {
-	box-sizing: border-box;
-	height: 60px;
-	background-color: black;
-	overflow: hidden;
+.services {
+	color: rgb(54, 54, 54);
+	padding: 50px 0;
+	background-image: url("../imgs/bg-world-01.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.services-icons {
+	margin: 90px 0 0 0;
+}
+
+.service-icon {
+	margin: 20px 0;
+}
+
+.service-icon p {
+	padding-top: 20px !important;
+}
+
+.place {
+	color: #FFFFFF;
+	padding: 50px 0;
+	background-image: url("../imgs/bg-world-02.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.place iframe {
+	margin-top: 40px;
+	width: 100%;
+	height: 400px;
+	border: 0;
+}
+
+
+.footer {
+	padding: 20px 0;
+}
+
+.about {
+	color: rgb(255, 255, 255);
+	padding: 50px 0;
+	background-image: url("../imgs/bg-about.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.about-imgs {
+	margin: 90px 0 0 0;
+}
+
+.about-img {
+	margin: 20px 0;
+}
+
+.app {
+	color: rgb(54, 54, 54);
+	padding: 50px 0;
+	display: block;
 	position: relative;
 }
 
-.segundo{
-	width:8%;
-	float:left;
-	overflow:hidden;
-	display:grid;
-	grid-template-rows:60px;
-	grid-template-columns:100%;
-	grid-template-areas:
-	"lp";
-	gap:0px 0px;
+.app::after {
+	content: "";
+	background-image: url("../imgs/bg-service.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
 }
-.terceiro{
-	width:81%;
-	float:left;
+
+.app-imgs {
+	margin: 90px 0 0 0;
 }
-.quarto{
-	width:8%;
-	overflow:hidden;
-	display:grid;
-	grid-template-rows:60px;
-	grid-template-columns:100%;
-	grid-template-areas:
-	"ls";
-	gap:0px 0px;
+
+.app-img {
+	margin: 20px 0;
 }
-.lp{
-	grid-area:lp;
-	justify-self:center;
-	align-self:center;
-}
-.ls{
-	grid-area:ls;
-	justify-self:center;
-	align-self:center;
-}
-.uppertext{
-	float:right;
-	font-size:25px;
-	text-decoration:none;
-	color:white;
-	padding:15px 25px;
-}
-.uppertext:hover{
-	color:red;
-}
-.bannerum{
-	overflow:hidden;
-	display:grid;
-	grid-template-rows:100%;
-	grid-template-columns:100%;
-	grid-template-areas:
-	"bannerum";
-	gap:0px 0px;
-}
-.lbum{
-	grid-area:bannerum;
-	align-self:center;
-	justify-self:center;
-}
-.bannerdois{
-	background-image:url("../imgs/bg-world.png");
-	background-repeat:no-repeat;
-	background-size:cover;
-	width:100%;
-	height:100%;
-	display:grid;
-	grid-template-rows:100%;
-	grid-template-columns:100%;
-	grid-template-areas:
-	"preplinks"
-}
-.preplinks{
-	grid-area:preplinks;
-	display:grid;
-	grid-template-rows:33% 33% 33%;
-	grid-template-columns:20% 20% 20% 20% 20%;
-	grid-template-areas:
-	". . . . ."
-	". linkum linkdois linktres ."
-	". . . . ."
-}
-.linkum{
-	grid-area:linkum;
-	align-self:center;
-	justify-self:center;
-}
-.linkdois{
-	grid-area:linkdois;
-	align-self:center;
-	justify-self:center;
-}
-.linktres{
-	grid-area:linktres;
-	align-self:center;
-	justify-self:center;
-}
-.footerf{
-	overflow:hidden;
-	box-sizing:border-box;
-	float:left;
-	background-color:black;
-	height:460px;
-}
-.primeirapart{
-	width:25%;
-}
-.segundapart{
-	width:50%;
-	float:center;
-}
-.terceirapart{
-	width:25%;
-	display:grid;
-	grid-template-rows:30% 70%;
-	grid-template-columns:20% 60% 20%;
-	grid-template-areas:
-	". footertexttitulo ."
-	". footertextpadrao .";
-}
-.iframeconfig{
-	width:100%;
-	height:460px;
-	border:0px;
-}
-.footertexttitulo{
-	grid-area:footertexttitulo;
-	justify-self:center;
-	align-self:center;
-}
-.footertextpadrao{
-	grid-area:footertextpadrao;
-	justify-self:center;
-	align-self:start;
+
+.contact {
+	color: rgb(255, 255, 255);
+	padding: 50px 0;
+	background-image: url("../imgs/bg-world-02.jpg");
+	background-position: center;
+	background-size: cover;
 }
