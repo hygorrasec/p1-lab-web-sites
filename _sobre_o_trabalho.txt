@@ -1,0 +1,14 @@
+T1 para a disciplina Laboratório de Programação de Web Sites
+
+OBJETIVO:
+Desenvolver o Web Site do Projeto criado na Disciplina de Práticas Extensionistas.
+
+PROJETO:
+Recikla Maricá.
+
+DETALHES:
+O trabalho foi desenvolvimento puramente em HTML5 e CSS. Foram utilizados duas bibliotecas para auxiliar a produção: Normalize e Bootstrap.
+
+UNIVERSIDADE DE VASSOURAS - CAMPUS MARICÁ - RJ
+Professor: André Saraiva
+Projeto desenvolvido por: Fábio Correa, Hygor Rasec, João Pedro, Luis Antonio, Nícolas Oliveira e Victor Bernardo.

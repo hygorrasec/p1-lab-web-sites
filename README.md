@@ -13,6 +13,7 @@ Desenvolver o Web Site do Projeto criado na Disciplina de Práticas Extensionist
 <br>
 
 #### *UNIVERSIDADE DE VASSOURAS - CAMPUS MARICÁ - RJ*
+#### *Professor André Saraiva*
 
 #### *Desenvolvido por:*
 #### *Fábio Correa - Graduando em Engenharia de Software*
