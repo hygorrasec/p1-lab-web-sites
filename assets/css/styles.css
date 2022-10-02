@@ -1,3 +1,5 @@
+/* Estilos para a página index.html */
+/* ================================ */
 .services {
 	color: rgb(54, 54, 54);
 	padding: 50px 0;
@@ -10,14 +12,17 @@
 	margin: 90px 0 0 0;
 }
 
-.service-icon {
+.services-icon {
 	margin: 20px 0;
 }
 
-.service-icon p {
+.services-icon p {
 	padding-top: 20px !important;
 }
 
+
+/* Estilos para a localização */
+/* ========================== */
 .place {
 	color: #FFFFFF;
 	padding: 50px 0;
@@ -34,10 +39,15 @@
 }
 
 
+/* Estilos para o footer */
+/* ===================== */
 .footer {
 	padding: 20px 0;
 }
 
+
+/* Estilos para a página sobre.html */
+/* ================================ */
 .about {
 	color: rgb(255, 255, 255);
 	padding: 50px 0;
@@ -54,6 +64,9 @@
 	margin: 20px 0;
 }
 
+
+/* Estilos para a página servicos.html */
+/* =================================== */
 .app {
 	color: rgb(54, 54, 54);
 	padding: 50px 0;
@@ -83,6 +96,9 @@
 	margin: 20px 0;
 }
 
+
+/* Estilos para a página contato.html */
+/* ================================== */
 .contact {
 	color: rgb(255, 255, 255);
 	padding: 50px 0;
